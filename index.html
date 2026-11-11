@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wellmma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellmma Playground — a safe learning space for children</title>
+<meta name="description" content="Wellmma Playground is a parent-controlled learning app for children. No ads, no feeds — family data stays in the parent's own Google account.">
+<link rel="icon" href="logo.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+:root{
+--bg:#1c2230;
+--card:#262d3d;
+--ink:#f4f6fa;
+--muted:#a5aec2;
+--line:rgba(255,255,255,.10);
+--brand:#52e6a0;
+--brand-ink:#10241b;
+}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:
+ radial-gradient(90% 55% at 0% 0%, rgba(82,230,160,.14), transparent 70%),
+ radial-gradient(80% 50% at 100% 0%, rgba(178,130,240,.12), transparent 70%),
+ var(--bg);
+background-repeat:no-repeat;
+color:var(--ink);
+line-height:1.8;
+}
+
+.container{
+max-width:1000px;
+margin:40px auto;
+background:var(--card);
+padding:50px;
+border-radius:28px;
+border:1px solid var(--line);
+box-shadow:0 20px 40px -20px rgba(0,0,0,.6);
+}
+
+h1{font-size:40px;margin-bottom:6px;color:var(--brand);letter-spacing:-.02em;}
+.tag{color:var(--muted);margin-bottom:18px;}
+
+h2{
+margin-top:45px;
+margin-bottom:15px;
+color:var(--brand);
+font-size:26px;
+border-left:5px solid var(--brand);
+padding-left:15px;
+letter-spacing:-.01em;
+}
+
+h3{margin-top:25px;margin-bottom:10px;color:var(--ink);}
+p{margin-bottom:18px;color:var(--ink);}
+ul{margin-left:25px;margin-bottom:20px;color:var(--ink);}
+li{margin:6px 0;}
+strong{color:var(--brand);}
+a{color:var(--brand);}
+
+table{width:100%;border-collapse:collapse;margin:20px 0 30px;}
+table th,table td{border:1px solid var(--line);padding:14px;text-align:left;vertical-align:top;}
+table th{background:rgba(82,230,160,.14);color:var(--brand);}
+
+.notice{
+background:rgba(82,230,160,.10);
+padding:20px;
+border-left:5px solid var(--brand);
+border-radius:14px;
+margin:25px 0;
+color:var(--ink);
+}
+
+.footer{
+margin-top:60px;
+padding-top:30px;
+border-top:1px solid var(--line);
+text-align:center;
+color:var(--muted);
+font-size:14px;
+}
+
+@media (max-width:640px){
+.container{margin:16px;padding:26px 20px;border-radius:22px;}
+h1{font-size:30px;}
+h2{font-size:22px;}
+}
+</style>
+<style>
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;}
+.nav a{padding:8px 16px;border-radius:999px;border:1px solid var(--line);color:var(--muted);text-decoration:none;font-size:15px;}
+.nav a.on{background:var(--brand);color:var(--brand-ink);border-color:var(--brand);font-weight:600;}
+.hero{display:flex;gap:24px;align-items:center;margin-bottom:10px;}
+.hero img{width:96px;height:96px;border-radius:22px;flex:none;}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;margin:6px 8px 6px 0;}
+.btn.ghost{background:transparent;color:var(--brand);border:1px solid var(--brand);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:20px 0;}
+.grid div{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:16px 18px;}
+.grid b{display:block;color:var(--ink);margin-bottom:4px;}
+.grid span{color:var(--muted);font-size:15px;line-height:1.6;}
+.footer a{color:var(--muted);margin:0 8px;}
+@media (max-width:640px){.hero{flex-direction:column;align-items:flex-start;gap:14px}.hero img{width:76px;height:76px}}
+</style>
 </head>
 <body>
-  <h1>Wellmma</h1>
-  <p>Official website of Wellmma.</p>
+<div class="container">
+<nav class="nav"><a href="home.html" class="on">Home</a><a href="./">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+<div class="hero">
+<img src="logo.png" alt="Wellmma Playground app icon">
+<div>
+<h1>Wellmma Playground</h1>
+<p class="tag" style="margin:0">Parents guide. Kids grow.</p>
+</div>
+</div>
+
+<p>Wellmma Playground is an Android app that gives a parent a safe, private learning space for their child. The parent chooses everything the child can see — videos, books, courses, projects, habits and daily plans. There are no ads, no public feeds and no strangers.</p>
+
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.wellmma.playground">Get it on Google Play</a>
+<a class="btn ghost" href="./">Read our Privacy Policy</a>
+
+<h2>What the app does</h2>
+<div class="grid">
+<div><b>Parent-approved videos</b><span>Only the videos a parent adds. No recommendations.</span></div>
+<div><b>Books &amp; courses</b><span>Reading and lessons chosen by the parent, with progress saved.</span></div>
+<div><b>Projects &amp; habits</b><span>Goals, to-dos and daily plans that build real-world skills.</span></div>
+<div><b>Parent Zone</b><span>PIN-protected controls for content, screen time and devices.</span></div>
+<div><b>Child devices</b><span>A child's phone joins with a parent PIN and a 6-digit code. No child account.</span></div>
+<div><b>Family only</b><span>Optional family chat and AI helper, controlled by the parent.</span></div>
+</div>
+
+<h2>Your family's data stays with you</h2>
+<p>Wellmma Playground has no server of its own. Each family's data is stored in a free Firebase project inside the parent's <strong>own</strong> Google account. We never receive a copy.</p>
+
+<h2>Why we ask for Google access</h2>
+<ul>
+<li><strong>Sign in with Google</strong> — to sign the parent in on any device. We use the email address and name only for this.</li>
+<li><strong>Firebase and Google Cloud access</strong> — only if the parent chooses <em>Setup Automatically</em>, so the app can create the family's Firebase project in the parent's own account and set it up. We do not touch anything else in the account.</li>
+</ul>
+<p>Google access is used only on the parent's device, is never sold or shared, and can be removed at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Full details are in our <a href="./">Privacy Policy</a>.</p>
+
+<h2>Contact</h2>
+<p>Questions or help: <a href="mailto:wellmma.care@gmail.com">wellmma.care@gmail.com</a></p>
+
+<div class="footer">
+<p><a href="home.html">Home</a> · <a href="./">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+<p>© 2026 Wellmma Playground · <a href="mailto:wellmma.care@gmail.com">wellmma.care@gmail.com</a></p>
+</div>
+</div>
 </body>
 </html>
